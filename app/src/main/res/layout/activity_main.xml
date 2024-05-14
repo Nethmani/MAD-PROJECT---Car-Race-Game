@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/game_background"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Score : 0"
+        android:textAlignment="center"
+        android:textColor="@color/black1"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="High Score : 0"
+        android:textAlignment="center"
+        android:textColor="@color/black1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/startbtn3"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Pause"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="@color/red" />
+
+    <Button
+        android:id="@+id/homePageButton"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue2"
+        android:onClick="navigateToHomePage"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
